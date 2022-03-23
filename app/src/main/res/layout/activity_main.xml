@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTituloResultado"
+        android:layout_width="301dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="Resultado:"
+        android:textColor="@color/orangeCustom"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTituloResultado4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Digite o preço da gasolina"
+        android:textColor="@color/orangeCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrecoGasolina"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTituloResultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Digite o preço da gasolina"
+        android:textColor="@color/orangeCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtPrecoGasolina"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Preço da Gasolina"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloResultado2" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrecoAlcool" />
+
+    <EditText
+        android:id="@+id/edtPrecoAlcool"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Preço do Alcool"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloResultado4" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:imeOptions="actionDone"
+        android:text="Resultado"
+        android:textColor="@color/greenCustom"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloResultado"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
