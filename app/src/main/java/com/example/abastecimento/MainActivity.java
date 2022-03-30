@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         carregarComponentes();
         configurarBotaoCalcular();
-    }
 
+    }
     //CARREGA OS COMPONENTES EM UMA VARIAVEL DECALRADA NO INICIO DESSA CLASSE
     private void carregarComponentes() {
         edtGasolina = findViewById(R.id.edtPrecoGasolina);
@@ -43,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("resultado", resultado);
                 exibiResultado(resultado);
                 limpaCampos();
+                HideKeyboard();
+            }
+            public void HideKeyboard(){
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(edtAlcool.getWindowToken(),0);
+                imm.hideSoftInputFromWindow(edtGasolina.getWindowToken(),0);
             }
 
             //REALIZA O CALCULO E RETORNA A MENSAGEM FILTRADA PARA A TELA
